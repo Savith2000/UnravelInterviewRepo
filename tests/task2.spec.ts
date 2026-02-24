@@ -11,5 +11,6 @@ test.describe('Jobs Insights', () => {
     await page.locator('.job-insights.unravel-loading').waitFor({ state: 'hidden' });
 
     await expect(page.locator('.daterange-selector')).toContainText('Last 7 days');
+    await expect(page.locator('.table-top-right-section .pr-2')).toContainText('8');
   });
 });
